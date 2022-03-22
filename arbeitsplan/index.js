@@ -1,13 +1,26 @@
 document.getElementById("clickMe").onclick = ausgeben;
 
-var el = document.getElementById("clickMe");
-if (el.addEventListener)
-    el.addEventListener("click", doFunction, false);
-else if (el.attachEvent)
-    el.attachEvent('onclick', doFunction);
+
 
 
 function ausgeben(){
-	window.alert("test");
-	
+	const d = new Date();
+	let day = d.getDay();
+	switch(day){
+		case 1: marius();break;
+		case 2: leon();break;
+		case 3: marius();break;
+		case 4: jakob();break;
+		case 5: jakob();break;
+	}
+}
+
+function leon(){
+	window.alert("Leon");
+}
+function jakob(){
+	window.alert("Jakob");
+}
+function marius(){
+	window.alert("Marius");
 }

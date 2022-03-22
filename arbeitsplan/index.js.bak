@@ -1,7 +1,26 @@
 document.getElementById("clickMe").onclick = ausgeben;
 
 
+
+
 function ausgeben(){
-	window.alert("test");
-	
+	const d = new Date();
+	let day = d.getDay();
+	switch(day){
+		case 1: marius();
+		case 2: leon();
+		case 3: marius();
+		case 4: jakob();
+		case 5: jakob();
+	}
+}
+
+function leon(){
+	window.alert("Leon");
+}
+function jakob(){
+	window.alert("Jakob");
+}
+function marius(){
+	window.alert("Marius");
 }
