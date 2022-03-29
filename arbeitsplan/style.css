@@ -1,0 +1,28 @@
+
+body {
+    font-family: arial;
+}
+#maindiv {
+    width: 500px;
+    margin: 0 auto;
+}
+
+table.WeekTable, table.WeekTable td, table.WeekTable th {
+    border-collapse: collapse;
+    border: 1px solid #000;
+    margin: 0 auto;
+}
+#clickMe {
+    background-color: #cde9ff;
+    border-radius: 30%;
+    border: 1px solid #000000;
+    height: 50px;
+    width: 200px;
+    font-size: 15px;
+}
+/*center buttondiv inside div*/
+#buttondiv {
+    /*offset from left 100px*/
+    margin-left: 150px;
+    width: 200px;
+}

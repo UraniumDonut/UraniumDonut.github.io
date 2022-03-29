@@ -1,14 +1,32 @@
 document.getElementById("clickMe").onclick = ausgeben;
 
 
-
+function weekcalc(){
+	const d = new Date();
+	let day = d.getDay();
+	let week = d.getWeek();
+	document.getElementById("currentweektext").innerHTML = "Es ist gerade Woche " + week%3;
+	switch(week%3){
+		case 0:
+			document.getElementById("W0").style.backgroundColor = "#c6ffa6";
+			break;
+		case 1:
+			document.getElementById("W1").style.backgroundColor = "#c6ffa6";
+			break;
+		case 2:
+			document.getElementById("W2").style.backgroundColor = "#c6ffa6";
+			break;
+	}
+}
 
 function ausgeben(){
 	const d = new Date();
 	let day = d.getDay();
 	let week = d.getWeek();
+	weekcalc();
 	switch(week%3){
 		case 0:
+			
 		switch(day){
 				case 1: marius();break;
 				case 2: leon();break;
@@ -18,7 +36,7 @@ function ausgeben(){
 			break;
 			
 		case 1:
-		
+
 			switch(day){
 				case 1: marius();break;
 				case 2: leon();break;
@@ -39,14 +57,15 @@ function ausgeben(){
 }
 
 function leon(){
-	window.alert("Leon");
+	window.alert("Heute arbeitet Leon");
 }
 function jakob(){
-	window.alert("Jakob");
+	window.alert("Heute arbeitet Jakob");
 }
 function marius(){
-	window.alert("Marius");
+	window.alert("Heute arbeitet Marius");
 }
+
 
 Date.prototype.getWeek = function() {
   var onejan = new Date(this.getFullYear(),0,1);

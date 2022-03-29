@@ -1,12 +1,98 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+    <div id="maindiv">
 <h1>Hochkomplexer Schichtplan </h1>
-<p>Auf die Taste clicken um herauszufinden wer arbeiten muss!</p>
-<input id="clickMe" type="button" value="Wer hat heute Schicht?" onclick="a();" />
-<script src="index.js"></script>
+<p>Auf die Taste clicken, um anzuzeigen, wer heute Schicht hat!</p>
+<div id="buttondiv">
+<input id="clickMe" type="button" value="Woche Berechnen?" />
+</div>
+<br>
+<p id="currentweektext" onload="weekcalc();">Es ist gerade Woche X</p>
+<br>
+<table class ="WeekTable" id="W0">
+    <tr>
+        <th>Woche 0</th>
+        <th>Schicht</th>
+    </tr>
+    <tr>
+        <td>Montag</td>
+        <td>Marius</td>
+    </tr>
+    <tr>
+        <td>Dienstag</td>
+        <td>Leon</td>
+    </tr>
+    <tr>
+        <td>Mittwoch</td>
+        <td>Marius</td>
+    </tr>
+    <tr>
+        <td>Donnerstag</td>
+        <td>Jakob</td>
+    </tr>
+    <tr>
+        <td>Freitag</td>
+        <td>Jakob</td>
+    </tr>
+</table>
+<table class ="WeekTable" id="W1">
+    <tr>
+        <th>Woche 1</th>
+        <th>Schicht</th>
+    </tr>
+    <tr>
+        <td>Montag</td>
+        <td>Marius</td>
+    </tr>
+    <tr>
+        <td>Dienstag</td>
+        <td>Leon</td>
+    </tr>
+    <tr>
+        <td>Mittwoch</td>
+        <td>Jakob</td>
+    </tr>
+    <tr>
+        <td>Donnerstag</td>
+        <td>Jakob</td>
+    </tr>
+    <tr>
+        <td>Freitag</td>
+        <td>Marius</td>
+    </tr>
+</table>
+<table class ="WeekTable" id="W2">
+    <tr>
+        <th>Woche 2</th>
+        <th>Schicht</th>
+    </tr>
+    <tr>
+        <td>Montag</td>
+        <td>Marius</td>
+    </tr>
+    <tr>
+        <td>Dienstag</td>
+        <td>Jakob</td>
+    </tr>
+    <tr>
+        <td>Mittwoch</td>
+        <td>Marius</td>
+    </tr>
+    <tr>
+        <td>Donnerstag</td>
+        <td>Jakob</td>
+    </tr>
+    <tr>
+        <td>Freitag</td>
+        <td>Leon</td>
+    </tr>
+</table>
+</div>
+<script src="index.js">
+</script>
 </body>
 </html>
